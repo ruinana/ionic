@@ -18,17 +18,10 @@ ionic start demoIonic tabs
 	桌面浏览器运行测试
 
 
-？？？？
+
 
 github
 	创建仓库
-项目-运行命令行
-	git add .
-	git config --global user email "邮箱"
-	git config --global user.name "名称"
-	it commit -m "标识"
-	git remote add origin git@github.com:昵称/仓库名称.git
-	git push -u origin master
 ionic
 	创建应用（应用会有一个appid）
 	设置-git-关联仓库
@@ -38,5 +31,16 @@ ionic
 	ionic cordova platform add android
 	ionic cordova platform rm ios】
 	ionic link --pro-id appid
-	在https://dashboard.ionicframework.com/app/512fefe1/deploy/channels点击安装说明会出现下面引号中需要写入得内容
+在https://dashboard.ionicframework.com/app/512fefe1/deploy/channels点击安装说明会出现cordova命令后引号中需要写入得内容
+项目-运行命令行
 	cordova plugin add cordova-plugin-ionic --variable APP_ID="appid" \ --variable CHANNEL_NAME="" \--variable UPDATE_METHOD="background"
+	git add .
+	git config --global user email "邮箱"
+	git config --global user.name "名称"
+	it commit -m "标识"
+	git remote add origin git@github.com:昵称/仓库名称.git
+	git push -u origin master
+在https://dashboard.ionicframework.com/app/512fefe1/commits的提交记录中，选择想要部署的列表，点击其右侧的Start web build按钮，然后create build后，就能在https://dashboard.ionicframework.com/app/512fefe1/deploy/builds/6442318/log看到一个web build进度，此刻部署完成。
+在https://dashboard.ionicframework.com/app/512fefe1/deploy/builds/6442318/log页面点击web build 可以看到你部署的列表。点击想要分配到ionic devapp上的，点击其右侧的assign to channel。在channel中选择production后，点击deploy。
+项目-运行命令行
+	ionic cordova run ios/android/
