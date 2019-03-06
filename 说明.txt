@@ -16,3 +16,27 @@ ionic start demoIonic tabs
        ionic serve/ng serve/npm start
 	ionic serve速度快
 	桌面浏览器运行测试
+
+
+？？？？
+
+github
+	创建仓库
+项目-运行命令行
+	git add .
+	git config --global user email "邮箱"
+	git config --global user.name "名称"
+	it commit -m "标识"
+	git remote add origin git@github.com:昵称/仓库名称.git
+	git push -u origin master
+ionic
+	创建应用（应用会有一个appid）
+	设置-git-关联仓库
+项目-运行命令行
+	ionic cordova platform
+	【ionic cordova platform add ios
+	ionic cordova platform add android
+	ionic cordova platform rm ios】
+	ionic link --pro-id appid
+	在https://dashboard.ionicframework.com/app/512fefe1/deploy/channels点击安装说明会出现下面引号中需要写入得内容
+	cordova plugin add cordova-plugin-ionic --variable APP_ID="appid" \ --variable CHANNEL_NAME="" \--variable UPDATE_METHOD="background"
