@@ -1,0 +1,18 @@
+npm install -g cordova
+	在电脑中全局安装cordova
+npm install -g ionic
+	在电脑中全局安装ionic
+ionic start demoIonic tabs
+	新建项目
+在项目文件夹下：
+       ionic platform add android
+	添加platform
+       ionic build android
+	构建android
+       ionic emulate android
+	运行在模拟器
+       ionic run android
+	真机运行
+       ionic serve/ng serve/npm start
+	ionic serve速度快
+	桌面浏览器运行测试
